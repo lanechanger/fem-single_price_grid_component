@@ -1,0 +1,23 @@
+html{
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+
+body{
+  background: gray;
+  margin: 0;
+  padding: 0;
+}
+
+.attribution{ 
+  font-size: 11px; 
+  text-align: center;
+
+  a{
+    color: hsl(228, 45%, 44%);
+  }
+}
