@@ -7,35 +7,45 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./dist/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Single Price Grid Component</title>
-  <script src="./app/js/script.js"></script>
+  <script src="./app/js/script.js" defer></script>
 </head>
 
 <body>
-  Join our community
+  <main class="main-app">
+    <header class="head">
+      <h1 class="head__header">Join our community</h1>
 
-  30-day, hassle-free money back guarantee
+      <h2 class="head__sub-header">30-day, hassle-free money back guarantee</h2>
+      <p class="head__text">Gain access to our full library of tutorials along with expert code reviews.<br>
+        Perfect for any developers who are serious about honing their skills.</p>
+    </header>
 
-  Gain access to our full library of tutorials along with expert code reviews.
-  Perfect for any developers who are serious about honing their skills.
+    <section class="CTA">
+      <h2 class="CTA__header">Monthly Subscription</h2>
+      <div class="CTA__price">
+        <p>&dollar;29</p>
+        <p>per month</p>
+      </div>
+      <p class="CTA__text">Full access for less than &dollar;1 a day</p>
+      <button class="CTA__button">Sign Up</button>
+    </section>
 
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
+    <aside class="info">
+      <h2 class="info__header">Why Us</h2>
+      <p class="info__text">
+        Tutorials by industry experts<br>
+        Peer &amp; expert code review<br>
+        Coding exercises<br>
+        Access to our GitHub repos<br>
+        Community forum<br>
+        Flashcard decks<br>
+        New videos every week
+      </p>
+    </aside>
+  </main>
 
   <footer class="attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

@@ -1,16 +1,45 @@
 html {
   box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
   font-size: 100%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: gray;
-  margin: 0;
-  padding: 0;
+  background-color: #e5eff5;
+}
+
+.main-app {
+  display: grid;
+  grid: "header header" 1fr "CTA info" 1fr / 1fr 1fr;
+}
+
+@media screen and (max-width: 639px) {
+  .main-app {
+    grid: "header" 1fr "CTA" 1fr "info" 1fr / 1fr;
+  }
+}
+
+.head {
+  background-color: white;
+  grid-area: header;
+}
+
+.CTA {
+  background-color: #2ab2af;
+  grid-area: CTA;
+}
+
+.info {
+  background-color: #98e6e4;
+  grid-area: info;
 }
 
 .attribution {
