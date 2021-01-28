@@ -13,40 +13,47 @@ html{
 }
 
 body{
+  position: relative;
+  align-items: center;
   background-color: $lightGray;
-}
+  display: flex;
+  justify-content: center;
+  padding-bottom: 62px;
+  padding-top: 72px;
 
-.main-app{
-  display: grid;
-  grid: "header header" 1fr
-  "CTA info" 1fr
-  / 1fr 1fr;
-
-  @include breakpoint-down(small){
-    grid: "header" 1fr
-  "CTA" 1fr
-  "info" 1fr
-  / 1fr;
+  @include breakpoint-up(medium){
+    height: 100vh;
   }
 }
 
-.head{
-  background-color: white;
-  grid-area: header;
-}
-.CTA{
-  background-color: $cyan;
-  grid-area: CTA;
-}
+.main-app{
+  z-index: 2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: grid;
+  grid: "header" auto
+  "CTA" auto
+  "info" auto
+  / 1fr;
+  overflow: hidden;
+  width: 82.93%;
 
-.info{
-  background-color: $lightCyan;
-  grid-area: info;
+  @include breakpoint-up(medium){
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    grid: "header header" auto
+    "CTA info" auto
+    / auto auto;
+    width: 635px;
+  }
 }
 
 .attribution{ 
+  bottom: 1rem;
   font-size: 11px; 
+  position: absolute;
   text-align: center;
+  width: 100%;
 
   a{
     color: hsl(228, 45%, 44%);

@@ -1,0 +1,48 @@
+.head{
+  background-color: white;
+  grid-area: header;
+  padding: 28px 24px 32px 24px;
+
+  @include breakpoint-up(medium){
+    padding: 40px;
+  }
+
+  &__header{
+    color: $cyan;
+    font-size: 1.25rem;
+    letter-spacing: -0.0156rem;
+    line-height: 1.4612rem;
+    @include breakpoint-up(medium){
+      font-size: 1.5rem;
+      letter-spacing: -0.0187rem;
+      line-height: 1.7537rem;
+    }
+  }
+
+  &__sub-header{
+    color: $brightYellow;
+    font-size: 0.9375rem;
+    letter-spacing: -0.0119rem;
+    line-height: 1.25rem;
+    padding-top: 24px;
+    @include breakpoint-up(medium){
+      font-size: 1.125rem;
+      letter-spacing: -0.0138rem;
+      line-height: 1.315rem;
+    }
+  }
+
+  &__text{
+    color: $grayishBlue;
+    font-size: 0.875rem;
+    letter-spacing: -0.0106rem;
+    line-height: 1.625rem;
+    padding-top: 16px;
+    @include breakpoint-up(medium){
+      font-size: 1rem;
+      letter-spacing: -0.0125rem;
+      padding-top: 11px;
+    }
+  }
+}
+
