@@ -13,35 +13,38 @@ html{
 }
 
 body{
-  position: relative;
-  align-items: center;
   background-color: $lightGray;
   display: flex;
   justify-content: center;
-  padding-bottom: 62px;
-  padding-top: 72px;
+  position: relative;
+  height: 100%;
+  align-items: center;
 
-  @include breakpoint-up(medium){
+  @media screen and (min-height: $totalHeight) and (min-width: $mobileUp) {
     height: 100vh;
   }
+}
 
-  @media screen and (orientation:landscape) {
-    height: 100%;
+.main-wrapper{
+  margin-top: $topBottomSpacing;
+  margin-bottom: $topBottomSpacing;
+  width: 82.93%;
+  
+  @include breakpoint-up(medium){
+    width: 635px;
   }
 }
 
 .main-app{
-  z-index: 2;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  box-shadow: 0px 15px 30px 0px rgba(0,81,171,0.15);
   display: grid;
   grid: "header" auto
   "CTA" auto
   "info" auto
   / 1fr;
   overflow: hidden;
-  width: 82.93%;
-  box-shadow: 0px 15px 30px 0px rgba(0,81,171,0.15);
 
   @include breakpoint-up(medium){
     border-top-left-radius: 8px;
@@ -49,7 +52,7 @@ body{
     grid: "header header" auto
     "CTA info" auto
     / 1fr 1fr;
-    width: 635px;
+    height: $appHeight;
   }
 }
 
@@ -58,7 +61,6 @@ body{
   font-size: 11px; 
   position: absolute;
   text-align: center;
-  width: 100%;
 
   a{
     color: hsl(228, 45%, 44%);

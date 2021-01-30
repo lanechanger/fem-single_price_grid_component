@@ -13,36 +13,39 @@ html {
 }
 
 body {
-  position: relative;
-  align-items: center;
   background-color: #e5eff5;
   display: flex;
   justify-content: center;
-  padding-bottom: 62px;
-  padding-top: 72px;
+  position: relative;
+  height: 100%;
+  align-items: center;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-height: 575px) and (min-width: 376px) {
   body {
     height: 100vh;
   }
 }
 
-@media screen and (orientation: landscape) {
-  body {
-    height: 100%;
+.main-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 82.93%;
+}
+
+@media screen and (min-width: 640px) {
+  .main-wrapper {
+    width: 635px;
   }
 }
 
 .main-app {
-  z-index: 2;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
   display: grid;
   grid: "header" auto "CTA" auto "info" auto / 1fr;
   overflow: hidden;
-  width: 82.93%;
-  box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
 }
 
 @media screen and (min-width: 640px) {
@@ -50,7 +53,7 @@ body {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     grid: "header header" auto "CTA info" auto / 1fr 1fr;
-    width: 635px;
+    height: 475px;
   }
 }
 
@@ -59,7 +62,6 @@ body {
   font-size: 11px;
   position: absolute;
   text-align: center;
-  width: 100%;
 }
 
 .attribution a {
