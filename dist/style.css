@@ -28,6 +28,12 @@ body {
   }
 }
 
+@media screen and (orientation: landscape) {
+  body {
+    height: 100%;
+  }
+}
+
 .main-app {
   z-index: 2;
   border-top-left-radius: 5px;
@@ -169,19 +175,19 @@ body {
 }
 
 .CTA__button {
-  font-family: 'Karla', sans-serif;
   background-color: #c0df34;
+  border: 0;
   border-radius: 0.3125rem;
   color: white;
+  cursor: pointer;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.097));
+  font-family: 'Karla', sans-serif;
   font-size: 1rem;
   letter-spacing: -0.0125rem;
   line-height: 1.1687rem;
   margin-top: 26px;
-  width: 100%;
   padding: 15px 102px;
-  cursor: pointer;
-  border: 0;
-  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.097));
+  width: 100%;
 }
 
 @media screen and (min-width: 640px) {
@@ -189,6 +195,22 @@ body {
     padding-left: 89px;
     padding-right: 89px;
   }
+}
+
+.CTA__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+
+.CTA__button:hover::before {
+  opacity: 1;
 }
 
 .CTA--shadow {

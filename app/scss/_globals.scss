@@ -24,6 +24,10 @@ body{
   @include breakpoint-up(medium){
     height: 100vh;
   }
+
+  @media screen and (orientation:landscape) {
+    height: 100%;
+  }
 }
 
 .main-app{
