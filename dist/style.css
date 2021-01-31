@@ -44,7 +44,7 @@ body {
   border-top-right-radius: 5px;
   box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
   display: grid;
-  grid: "header" auto "CTA" auto "info" auto / 1fr;
+  grid: "header" auto "cta" auto "info" auto / 1fr;
   overflow: hidden;
 }
 
@@ -52,7 +52,7 @@ body {
   .main-app {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    grid: "header header" auto "CTA info" auto / 1fr 1fr;
+    grid: "header header" auto "cta info" auto / 1fr 1fr;
   }
 }
 
@@ -126,33 +126,33 @@ body {
   }
 }
 
-.CTA {
+.cta {
   background-color: #2ab2af;
   color: white;
-  grid-area: CTA;
+  grid-area: cta;
   letter-spacing: -0.0125rem;
   padding: 24px;
 }
 
 @media screen and (min-width: 640px) {
-  .CTA {
+  .cta {
     padding: 40px;
   }
 }
 
-.CTA__header {
+.cta__header {
   font-size: 18px;
   letter-spacing: -0.2208px;
   line-height: 21.04px;
 }
 
-.CTA__price {
+.cta__price {
   align-items: center;
   display: flex;
   padding-top: 18px;
 }
 
-.CTA__dollar {
+.cta__dollar {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.025rem;
@@ -160,7 +160,7 @@ body {
   margin-right: 0.6875rem;
 }
 
-.CTA__frequency {
+.cta__frequency {
   color: #cde5e4;
   font-size: 1rem;
   letter-spacing: -0.0125rem;
@@ -168,14 +168,14 @@ body {
   opacity: 0.5;
 }
 
-.CTA__text {
+.cta__text {
   font-size: 1rem;
   letter-spacing: -0.0125rem;
   line-height: 1.625rem;
   padding-top: 4px;
 }
 
-.CTA__button {
+.cta__button {
   background-color: #c0df34;
   border: 0;
   border-radius: 0.3125rem;
@@ -192,13 +192,13 @@ body {
 }
 
 @media screen and (min-width: 640px) {
-  .CTA__button {
+  .cta__button {
     padding-left: 89px;
     padding-right: 89px;
   }
 }
 
-.CTA__button::before {
+.cta__button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -210,11 +210,11 @@ body {
   transition: opacity 150ms ease-in-out;
 }
 
-.CTA__button:hover::before {
+.cta__button:hover::before {
   opacity: 1;
 }
 
-.CTA--shadow {
+.cta--shadow {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 

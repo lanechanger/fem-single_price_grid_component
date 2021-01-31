@@ -41,7 +41,7 @@ body{
   box-shadow: 0px 15px 30px 0px rgba(0,81,171,0.15);
   display: grid;
   grid: "header" auto
-  "CTA" auto
+  "cta" auto
   "info" auto
   / 1fr;
   overflow: hidden;
@@ -50,7 +50,7 @@ body{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     grid: "header header" auto
-    "CTA info" auto
+    "cta info" auto
     / 1fr 1fr;
   }
 }
