@@ -17,22 +17,9 @@ body{
   display: flex;
   justify-content: center;
   position: relative;
+  min-height: 100vh;
   height: 100%;
   align-items: center;
-
-  @media screen and (min-height: $totalHeight) and (min-width: $mobileUp) {
-    height: 100vh;
-  }
-}
-
-.main-wrapper{
-  margin-top: $topBottomSpacing;
-  margin-bottom: $topBottomSpacing;
-  width: 82.93%;
-  
-  @include breakpoint-up(medium){
-    width: 635px;
-  }
 }
 
 .main-app{
@@ -45,6 +32,9 @@ body{
   "info" auto
   / 1fr;
   overflow: hidden;
+  margin-top: $topBottomSpacing;
+  margin-bottom: $topBottomSpacing;
+  width: 82.93%;
 
   @include breakpoint-up(medium){
     border-top-left-radius: 8px;
@@ -52,6 +42,7 @@ body{
     grid: "header header" auto
     "cta info" auto
     / 1fr 1fr;
+    width: 635px;
   }
 }
 
