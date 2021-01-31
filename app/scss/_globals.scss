@@ -13,13 +13,13 @@ html{
 }
 
 body{
+  align-items: center;
   background-color: $lightGray;
   display: flex;
-  justify-content: center;
-  position: relative;
-  min-height: 100vh;
   height: 100%;
-  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
 }
 
 .main-app{
@@ -31,9 +31,9 @@ body{
   "cta" auto
   "info" auto
   / 1fr;
-  overflow: hidden;
-  margin-top: $topBottomSpacing;
   margin-bottom: $topBottomSpacing;
+  margin-top: $topBottomSpacing;
+  overflow: hidden;
   width: 82.93%;
 
   @include breakpoint-up(medium){

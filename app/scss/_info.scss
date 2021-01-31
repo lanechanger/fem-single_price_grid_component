@@ -16,11 +16,11 @@
   }
 
   &__text{
-    list-style-type: none;
     color: $infoBlue;
     font-size: 0.875rem;
     letter-spacing: -0.0106rem;
     line-height: 1.25rem;
+    list-style-type: none;
     opacity: 0.75;
 
     &:first-child{
