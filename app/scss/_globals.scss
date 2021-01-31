@@ -13,11 +13,17 @@ html{
 }
 
 body{
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: $lightGray;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
   position: relative;
 }
@@ -26,6 +32,7 @@ body{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   box-shadow: 0px 15px 30px 0px rgba(0,81,171,0.15);
+  display: -ms-grid;
   display: grid;
   grid: "header" auto
   "cta" auto
