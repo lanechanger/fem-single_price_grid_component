@@ -43,6 +43,12 @@ body {
   }
 }
 
+.sub-header {
+  font-size: 1.125rem;
+  letter-spacing: -0.0138rem;
+  line-height: 1.315rem;
+}
+
 .attribution {
   bottom: 1rem;
   font-size: 11px;
@@ -125,12 +131,6 @@ body {
   .cta {
     padding: 40px;
   }
-}
-
-.cta__header {
-  font-size: 18px;
-  letter-spacing: -0.2208px;
-  line-height: 21.04px;
 }
 
 .cta__price {
@@ -217,12 +217,6 @@ body {
   .info {
     padding: 40px;
   }
-}
-
-.info__header {
-  font-size: 1.125rem;
-  letter-spacing: -0.0138rem;
-  line-height: 1.315rem;
 }
 
 .info__text {
