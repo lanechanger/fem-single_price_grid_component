@@ -239,11 +239,8 @@ body {
   line-height: 1.315rem;
 }
 
-.info__list {
-  list-style-type: none;
-}
-
 .info__text {
+  list-style-type: none;
   color: #eef2f1;
   font-size: 0.875rem;
   letter-spacing: -0.0106rem;

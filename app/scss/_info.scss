@@ -15,11 +15,8 @@
     line-height: 1.315rem;
   }
 
-  &__list{
-    list-style-type: none;
-  }
-
   &__text{
+    list-style-type: none;
     color: $infoBlue;
     font-size: 0.875rem;
     letter-spacing: -0.0106rem;
