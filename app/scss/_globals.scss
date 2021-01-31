@@ -29,9 +29,9 @@ body{
 }
 
 .main-app{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  box-shadow: 0px 15px 30px 0px rgba(0,81,171,0.15);
+  border-top-left-radius: 0.3125rem;
+  border-top-right-radius: 0.3125rem;
+  box-shadow: 0rem 0.9375rem 1.875rem 0rem rgba(0,81,171,0.15);
   display: -ms-grid;
   display: grid;
   grid: "header" auto
@@ -44,12 +44,12 @@ body{
   width: 82.93%;
 
   @include breakpoint-up(medium){
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
     grid: "header header" auto
     "cta info" auto
     / 1fr 1fr;
-    width: 635px;
+    width: 39.6875rem;
   }
 }
 
@@ -61,7 +61,7 @@ body{
 
 .attribution{ 
   bottom: 1rem;
-  font-size: 11px; 
+  font-size: 0.6875rem; 
   position: absolute;
   text-align: center;
 

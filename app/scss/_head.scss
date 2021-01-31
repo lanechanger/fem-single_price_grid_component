@@ -1,10 +1,10 @@
 .head{
   background-color: white;
   grid-area: header;
-  padding: 28px 24px 32px 24px;
+  padding: 1.75rem 1.5rem 2rem 1.5rem;
 
   @include breakpoint-up(medium){
-    padding: 40px;
+    padding: 2.5rem;
   }
 
   &__header{
@@ -24,7 +24,7 @@
     font-size: 0.9375rem;
     letter-spacing: -0.0119rem;
     line-height: 1.25rem;
-    padding-top: 24px;
+    padding-top: 1.5rem;
     @include breakpoint-up(medium){
       font-size: 1.125rem;
       letter-spacing: -0.0138rem;
@@ -37,11 +37,11 @@
     font-size: 0.875rem;
     letter-spacing: -0.0106rem;
     line-height: 1.625rem;
-    padding-top: 16px;
+    padding-top: 1rem;
     @include breakpoint-up(medium){
       font-size: 1rem;
       letter-spacing: -0.0125rem;
-      padding-top: 11px;
+      padding-top: 0.6875rem;
     }
   }
 }

@@ -3,10 +3,10 @@
   color: white;
   grid-area: info;  
   opacity: 0.85;
-  padding: 24px;
+  padding: 1.5rem;
 
   @include breakpoint-up(medium){
-    padding: 40px;
+    padding: 2.5rem;
   }
 
   &__text{
@@ -18,7 +18,7 @@
     opacity: 0.75;
 
     &:first-child{
-      padding-top: 18px;
+      padding-top: 1.125rem;
     }
   }
 }
