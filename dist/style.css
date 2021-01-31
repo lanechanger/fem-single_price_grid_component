@@ -239,12 +239,19 @@ body {
   line-height: 1.315rem;
 }
 
+.info__list {
+  list-style-type: none;
+}
+
 .info__text {
   color: #eef2f1;
   font-size: 0.875rem;
   letter-spacing: -0.0106rem;
   line-height: 1.25rem;
-  padding-top: 18px;
   opacity: 0.75;
+}
+
+.info__text:first-child {
+  padding-top: 18px;
 }
 /*# sourceMappingURL=style.css.map */

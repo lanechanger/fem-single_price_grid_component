@@ -15,12 +15,19 @@
     line-height: 1.315rem;
   }
 
+  &__list{
+    list-style-type: none;
+  }
+
   &__text{
     color: $infoBlue;
     font-size: 0.875rem;
     letter-spacing: -0.0106rem;
     line-height: 1.25rem;
-    padding-top: 18px;
     opacity: 0.75;
+
+    &:first-child{
+      padding-top: 18px;
+    }
   }
 }
